@@ -1,7 +1,7 @@
 # tiny-router-js
 Tiny JavaScript router
 
-Setup
+### Setup
 ```<script src="tinyrouter.js"></script>```
 
 ### Configuration
