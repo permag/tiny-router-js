@@ -1,10 +1,14 @@
 # tiny-router-js
 Tiny JavaScript router
 
-### Configuration:
+Setup
+```<script src="tinyrouter.js"></script>```
+
+### Configuration
+In your main JavaScript file:
 ```
 // Routes
-config.router({
+router({
   '/': function() {
     myList();
   },
@@ -26,7 +30,7 @@ function myItem(id) {
   console.log('My item.', id);
 }
 ```
-### Usage:
+### Usage
 ```
 mydomain.com/#/mylist
 or
