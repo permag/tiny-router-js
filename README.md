@@ -9,11 +9,11 @@ In your main JavaScript file:
 ```
 // Routes
 router({
-  '/': function() {
+  '/': function () {
     myList();
   },
   '/mylist': myList,
-  '/myitem/:id': myItem
+  '/myitem/:id/colors/:color': myItem
 },
 {
   before: function () {
@@ -23,11 +23,11 @@ router({
 
 // Route functions
 function myList() {
-  console.log('My list.');
+  alert('My list.');
 }
 
-function myItem(id) {
-  console.log('My item.', id);
+function myItem(id, color) {
+  alert('My item. ' + id + ' ' + color);
 }
 ```
 ### Usage
@@ -35,4 +35,6 @@ function myItem(id) {
 mydomain.com/#/mylist
 or
 mydomain.com/#!/mylist
+
+mydomain.com/#/myitem/99/colors/brown
 ```

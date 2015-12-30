@@ -9,11 +9,11 @@
   <script>
     // Routes
     router({
-      '/': function() {
+      '/': function () {
         myList();
       },
       '/mylist': myList,
-      '/myitem/:id': myItem
+      '/myitem/:id/colors/:color': myItem
     },
     {
       before: function () {
@@ -26,12 +26,12 @@
       alert('My list.');
     }
 
-    function myItem(id) {
-      alert('My item. ' + id);
+    function myItem(id, color) {
+      alert('My item. ' + id + ' ' + color);
     }
   </script>
 
   <p><a href="#/mylist">My list</a></p>
-  <p><a href="#/myitem/99">My item</a></p>
+  <p><a href="#/myitem/99/colors/brown">My item</a></p>
 </body>
 </html>
