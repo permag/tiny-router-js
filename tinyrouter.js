@@ -3,10 +3,11 @@ function router(routes, ob) {
   routeEvent(ob, 'before');
   route();
 
-  $(window).on('hashchange', function () {
+  window.addEventListener('hashchange', function () {
     routeEvent(ob, 'before');
     route();
-  });
+  }, false);
+
 
   function routeEvent(ob, prop) {
     if (!ob[prop]) return;
